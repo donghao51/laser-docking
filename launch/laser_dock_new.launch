@@ -1,0 +1,14 @@
+<launch>
+   <node pkg="laser_tri" name="laser_dock_new" type="laser_dock_new" output="screen">
+      <param name="kp" type="double" value="0.8" />
+      <param name="kd" type="double" value="4" />
+      <param name="laser2base" type="double" value="0.40834389165276" />
+      <param name="linearV" type="double" value="0.1" />
+      <param name="angleV" type="double" value="0.1" />
+      <param name="yDesire" type="double" value="0.3" />
+      <param name="dis_to_mid_err" type="double" value="0.015" />
+      <param name="goal_x" type="double" value="-0.1" />
+      <param name="goal_y" type="double" value="0.1" />
+      <param name="goal_dir" type="double" value="-1.57" />
+   </node>
+</launch>
