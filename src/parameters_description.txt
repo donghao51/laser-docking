@@ -9,3 +9,14 @@ minRegionPointNum指定区域内激光点数的最小值，默认30，若小于�
 edge_point_filter为去除标志物两边直线上的激光扫描点，默认20
 point2line是标志物顶点到底边的距离，默认0.095
 point2line_err是标志物顶点到底边的距离的允许误差，默认0.015
+
+goal_range is the detection range of the landmark，default 1.2
+tri_len is the length of the landmark，default 0.45，it may differs for different sensors and may need tune
+tri_len_err is the allowed length error of the landmark，default 0.02
+angleDif is angle of the landmark，default 0.95
+angleDif_err is the allowed angle error of the landmark，default 0.13
+disDif is the maximum interval between two consecutive laser scanning points, which is used to divide the area. It may fluctuate greatly on different lidars.
+minRegionPointNum is the min number of lidar points in a region，default 30，if less than this value, ignore this region
+edge_point_filter is the number of lidar points to be removed for the edges of the landmark，default 20
+point2line is the distance from the vertex to the edge of the marker，default 0.095
+point2line_err is the allowed length error for point2line，default 0.015
